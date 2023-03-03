@@ -21,3 +21,12 @@ this.
 - [Follow this answer](https://stackoverflow.com/a/60529140/4245112)
 - Now run `flutter doctor --android-licenses`
 - Now run `flutter doctor`
+
+## Create a flutter project
+
+- Run `flutter create my_app`
+- Run `cd my_app`
+- Open iPhone Simulator by running: `open -a Simulator`
+- Run `flutter run`
+- [Run on actual iPhone](https://docs.flutter.dev/get-started/install/macos#deploy-to-ios-devices)
+- [Run on android](https://docs.flutter.dev/get-started/install/macos#set-up-your-android-device)

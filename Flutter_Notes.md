@@ -45,6 +45,35 @@ this.
 - `Scaffold` is a built-in widget represent an empty screen
 - `Row, column, container, appbar, Network Image` are some of the built-in widget
 
+
+
+## Flutter iOS App CD to Testflight
+
+- First run 
+
+		flutter build ipa
+
+- If you have different schemes run:
+
+		flutter build ipa --flavor SCHEME_NAME
+- This may generate `provision profile` related error, to solve this:
+	- Create app using a bundle id in Appstore connect
+	- Add that bundle id in `Xcode` -> `Signing And Capabilities` -> `Bundle Identifier`
+	- Click `Automatically manage signing`
+- Now try `flutter build ipa --flavor SCHEME_NAME` command again. This time it should work and ipa should be generated it this path: `PROJECT_ROOT/build/ios/ipa/*.ipa`
+- Go to app store connect, find created apps, then click `TestFlight` tab. Click `Internal Testing` to create tester group and add emails of people who wants to run Testflight build.
+- Create provision profile using bundle id for type `Development` and `AppStore`(for TestFlight upload)
+- Create a gem file which contains at least: `gem "fastlane"`
+- You need to add `gem "cocoapods"` if you are using cocoapods.
+- Install bundler by running: `gem install buldler`
+- Now from the same directory where your `Gem file` is stored, run: `bundle install`
+- Now run `fastlane init` and configure accordingly
+- Now run `fastlane match appstore` and `fastlane match development` if these commands are successful we are good to go. 	
+- Learn about [fastlae match from here](https://youtu.be/Edr88s5YlH4) 	
+
+
+
+
 ## Useful commands
 - Open an iOS Simulator using UDID 
 

@@ -45,6 +45,26 @@ this.
 - `Scaffold` is a built-in widget represent an empty screen
 - `Row, column, container, appbar, Network Image` are some of the built-in widget
 
+## Flutter Widgets
+- A Flutter app is itself a widget.
+- Widgets are classes used to build UIs. They are used for both layout and UI elements.
+- In Flutter, almost everything is a widget—even layout models are widgets. The images, icons, and text that you see in a Flutter app are all widgets. But things you don’t see are also widgets, such as the rows, columns, and grids that arrange, constrain, and align the visible widgets.
+- All layout widgets have either of the following:
+	- A `child` property if they take a single child—for example, Center or Container
+	- A `children` property if they take a list of widgets—for example, Row, Column, ListView, or Stack.
+- `BuildContext` is used to provide the position where the widget will sit in the element tree
+- 3 types of widget:
+	- Stateless widget
+	- Statefull widget
+	- Inherited Widget
+
+### Inherited Widget
+- Used to share state between child widgets
+- [Resource](https://www.youtube.com/watch?v=utrvu-eow6U)
+
+### Container 
+- Container is a widget class that allows you to customize its child widget. 
+- Use a Container when you want to add padding, margins, borders, or background color, to name some of its capabilities.
 
 
 ## Flutter iOS App CD to Testflight

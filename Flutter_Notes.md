@@ -118,7 +118,28 @@ this.
 - Now run this lane to upload in testflight
 - Follow [this PR](https://github.com/nimblehq/ic-flutter-taher-toby/pull/51) for more details
 
+## Learn Riverpod
+### why riverpod
+Riverpod is very versatile, and you can use it to:
 
+- catch programming errors at compile-time rather than at runtime
+- easily fetch, cache, and update data from a remote source
+- perform reactive caching and easily update your UI
+- depend on asynchronous or computed state
+- create, use, and combine providers with minimal boilerplate code
+- dispose the state of a provider when it is no longer used
+- write testable code and keep your logic outside the widget tree
+- Riverpod implements well-defined patterns for retrieving and caching data, so you don't have to reimplement them.
+- `Riverpod is compile-safe since all providers are declared globally and can be accessed anywhere`. This means that you can create providers to hold your application state and business logic outside the widget tree.
+- since Riverpod is a reactive framework, it makes it easier to only rebuild your providers and widgets when needed.
+- [small article](https://medium.com/@FlutterTech/a-masterclass-in-flutter-state-management-riverpod-b24f5992f646)
+- [resource](https://resocoder.com/2022/04/22/riverpod-2-0-complete-guide-flutter-tutorial/)
+- [more resource](https://codewithandrea.com/articles/flutter-state-management-riverpod/)
+- [How to handle loading and error states with StateNotifier & AsyncValue in Flutter](https://codewithandrea.com/articles/loading-error-states-state-notifier-async-value/)
+
+## Learn Go_Router
+- User for navigation inside the app
+- [resource](https://blog.codemagic.io/flutter-go-router-guide/)
 
 ## Useful commands
 - Open an iOS Simulator using UDID 
@@ -130,3 +151,10 @@ this.
 
 `xcrun simctl list`
 
+- Run flutter app with specific scheme like staging or production
+
+`flutter run --flavor staging`
+
+- Run build-runner command
+
+`fvm flutter packages pub run build_runner build --delete-conflicting-outputs`

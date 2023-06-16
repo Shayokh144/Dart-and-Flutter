@@ -58,6 +58,12 @@ this.
 	- Statefull widget
 	- Inherited Widget
 
+## Widget Constraint
+- A widget gets its own constraints from its parent. A constraint is just a set of 4 doubles: a minimum and maximum width, and a minimum and maximum height.
+- Then the widget goes through its own list of children. One by one, the widget tells its children what their constraints are (which can be different for each child), and then asks each child what size it wants to be.
+- Then, the widget positions its children (horizontally in the x axis, and vertically in the y axis), one by one. And, finally, the widget tells its parent about its own size (within the original constraints, of course).
+- A widget can decide its own size only within the constraints given to it by its parent. This means a widget usually can’t have any size it wants.
+
 ### Inherited Widget
 - Used to share state between child widgets
 - [Resource](https://www.youtube.com/watch?v=utrvu-eow6U)
@@ -137,6 +143,22 @@ Riverpod is very versatile, and you can use it to:
 - [more resource](https://codewithandrea.com/articles/flutter-state-management-riverpod/)
 - [How to handle loading and error states with StateNotifier & AsyncValue in Flutter](https://codewithandrea.com/articles/loading-error-states-state-notifier-async-value/)
 
+## Navigation with navigator
+- For simple navigation we can use Navigator:
+- Push a new screen
+```Dart
+Navigator.push(
+    context,
+    MaterialPageRoute(builder: (context) => const NewScreenWidget()),
+  );
+```
+- Pop current screen
+```Dart
+Navigator.pop(context);
+```
+- For named argument we can use  `Navigator.pushNamed()` but it is not recommended to use, need to use `GoRoute` instead.
+- Deeplink for [Android](https://docs.flutter.dev/cookbook/navigation/set-up-app-links)
+- Deeplink for [iOS](https://docs.flutter.dev/cookbook/navigation/set-up-universal-links)
 ## Learn Go_Router
 - User for navigation inside the app
 - [resource](https://blog.codemagic.io/flutter-go-router-guide/)

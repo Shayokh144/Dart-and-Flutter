@@ -72,6 +72,9 @@ this.
 - Container is a widget class that allows you to customize its child widget. 
 - Use a Container when you want to add padding, margins, borders, or background color, to name some of its capabilities.
 
+## Asset management with flutter_gen
+- [Resource](https://dhruvnakum.xyz/fluttergen-manage-assets-like-a-pro)
+
 
 ## Flutter iOS App CD to Testflight
 
@@ -124,7 +127,7 @@ this.
 - Now run this lane to upload in testflight
 - Follow [this PR](https://github.com/nimblehq/ic-flutter-taher-toby/pull/51) for more details
 
-## Learn Riverpod
+## Riverpod
 ### why riverpod
 Riverpod is very versatile, and you can use it to:
 

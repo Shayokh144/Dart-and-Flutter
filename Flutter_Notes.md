@@ -75,6 +75,12 @@ this.
 ## Asset management with flutter_gen
 - [Resource](https://dhruvnakum.xyz/fluttergen-manage-assets-like-a-pro)
 
+## Testing
+- [Unit test](https://docs.flutter.dev/cookbook/testing/unit/introduction)
+- [Integration test](https://docs.flutter.dev/cookbook/testing/integration/introduction/)
+- [Widget test/ UI test](https://docs.flutter.dev/cookbook/testing/widget/introduction/)
+- [Performance profiling](https://docs.flutter.dev/cookbook/testing/integration/profiling/)
+
 
 ## Flutter iOS App CD to Testflight
 
